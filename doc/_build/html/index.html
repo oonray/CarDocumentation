@@ -1,0 +1,337 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome to ProjectCarDoc’s documentation! &#8212; ProjectCarDoc 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-projectcardoc-s-documentation">
+<h1>Welcome to ProjectCarDoc’s documentation!<a class="headerlink" href="#welcome-to-projectcardoc-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+<div class="section" id="module-Cars">
+<span id="car-module"></span><h1>CAR MODULE<a class="headerlink" href="#module-Cars" title="Permalink to this headline">¶</a></h1>
+<p>This module creates a Car store that gets items form a Car Factory.</p>
+<dl class="class">
+<dt id="Cars.BMW">
+<em class="property">class </em><code class="descclassname">Cars.</code><code class="descname">BMW</code><span class="sig-paren">(</span><em>**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Cars.BMW" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="Cars.BMW.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Cars.BMW.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a BMW Class.
+Inherits CAR</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>arg</strong> (<em>dict</em>) – Contains the information about a BMW car.</li>
+<li><strong>type</strong> (<em>str</em>) – The type of the car. Should be part of arg. Key is «type».</li>
+<li><strong>doors</strong> (<em>int</em>) – The doors that the car has.  Should be part of arg. Key is «doors».</li>
+<li><strong>fuel</strong> (<a class="reference internal" href="#Cars.Fuel" title="Cars.Fuel"><em>Fuel</em></a>) – The fuel that the car needs. Should be part of arg. Key is «fuel».</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Cars.Car">
+<em class="property">class </em><code class="descclassname">Cars.</code><code class="descname">Car</code><a class="headerlink" href="#Cars.Car" title="Permalink to this definition">¶</a></dt>
+<dd><p>A single Car Class
+All Car types inherit from it.</p>
+<dl class="method">
+<dt id="Cars.Car.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Cars.Car.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the Car constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>self</strong> (<a class="reference internal" href="#Cars.Car" title="Cars.Car"><em>Car</em></a>) – The instance of this object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cars.Car.__str__">
+<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Cars.Car.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prnts:
+This car is a {s.model}: {s.type}, Wow!
+The car has {s.doors} doors and {s.seets} seets</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A custom string showing off the make model and capacity of the current car.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cars.Car.print_model">
+<code class="descname">print_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Cars.Car.print_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints the model of the current car using self.model and self.type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>self</strong> (<a class="reference internal" href="#Cars.Car" title="Cars.Car"><em>Car</em></a>) – The instance of this object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Nothing</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cars.Car.print_space">
+<code class="descname">print_space</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Cars.Car.print_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints the space in the current car.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>self</strong> (<a class="reference internal" href="#Cars.Car" title="Cars.Car"><em>Car</em></a>) – The instance of this object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Nothing</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Cars.CarStore">
+<em class="property">class </em><code class="descclassname">Cars.</code><code class="descname">CarStore</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Cars.CarStore" title="Permalink to this definition">¶</a></dt>
+<dd><p>The car store</p>
+<dl class="method">
+<dt id="Cars.CarStore.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Cars.CarStore.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cars.CarStore.__str__">
+<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Cars.CarStore.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return str(self).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cars.CarStore.show_car">
+<code class="descname">show_car</code><span class="sig-paren">(</span><em>car=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Cars.CarStore.show_car" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows a car and what fuel it uses.
+If car is not defined gets one from the factory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>car</strong> (<a class="reference internal" href="#Cars.Car" title="Cars.Car"><em>Car</em></a>) – A car to be displayed. Default: None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Nothing</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Cars.Fuel">
+<em class="property">class </em><code class="descclassname">Cars.</code><code class="descname">Fuel</code><span class="sig-paren">(</span><em>**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Cars.Fuel" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Fuel of a Car.</p>
+<dl class="method">
+<dt id="Cars.Fuel.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Cars.Fuel.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Fuel of a Car.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>arg</strong> (<em>dict</em>) – The information about the Fuel</li>
+<li><strong>liters</strong> (<em>int</em>) – How many liters of fuel needed.</li>
+<li><strong>type</strong> (<em>str</em>) – What type of fuel needed.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Cars.Fuel.__str__">
+<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Cars.Fuel.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints:
+It uses {s.liters}L of {s.type}¢.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A Custom string showing what fuel it is,</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Cars.Lada">
+<em class="property">class </em><code class="descclassname">Cars.</code><code class="descname">Lada</code><span class="sig-paren">(</span><em>**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Cars.Lada" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="Cars.Lada.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Cars.Lada.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a Lada Class.
+Inherits CAR</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>arg</strong> (<em>dict</em>) – Contains the information about a Lada car.</li>
+<li><strong>type</strong> (<em>str</em>) – The type of the car. Should be part of arg. Key is «type».</li>
+<li><strong>doors</strong> (<em>int</em>) – The doors that the car has.  Should be part of arg. Key is «doors».</li>
+<li><strong>fuel</strong> (<a class="reference internal" href="#Cars.Fuel" title="Cars.Fuel"><em>Fuel</em></a>) – The fuel that the car needs. Should be part of arg. Key is «fuel».</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Cars.Mercedes">
+<em class="property">class </em><code class="descclassname">Cars.</code><code class="descname">Mercedes</code><span class="sig-paren">(</span><em>**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Cars.Mercedes" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="Cars.Mercedes.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Cars.Mercedes.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a Mercedes Class.
+Inherits CAR</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>arg</strong> (<em>dict</em>) – Contains the information about a Mercedes car.</li>
+<li><strong>type</strong> (<em>str</em>) – The type of the car. Should be part of arg. Key is «type».</li>
+<li><strong>doors</strong> (<em>int</em>) – The doors that the car has.  Should be part of arg. Key is «doors».</li>
+<li><strong>fuel</strong> (<a class="reference internal" href="#Cars.Fuel" title="Cars.Fuel"><em>Fuel</em></a>) – The fuel that the car needs. Should be part of arg. Key is «fuel».</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">ProjectCarDoc</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Alexander.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
